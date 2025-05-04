@@ -1,0 +1,104 @@
+.search-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 20px;
+    background-color: var(--white);
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.location svg {
+    width: 16px;
+    height: 16px;
+    color: var(--accent-blue);
+}
+
+.search-bar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex: 0.6;
+}
+
+.search-input {
+    width: 100%;
+    padding: 12px 45px 12px 15px;
+    border: 1px solid var(--search-border);
+    border-radius: 24px;
+    background-color: var(--search-bg);
+    font-family: 'text1', sans-serif;
+    font-size: 14px;
+    color: var(--text-color);
+    transition: all 0.3s ease;
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: var(--accent-blue);
+    box-shadow: 0 0 0 3px rgba(64, 154, 199, 0.2);
+}
+
+.search-input::placeholder {
+    color: var(--search-placeholder);
+}
+
+.search-button {
+    position: absolute;
+    right: 12px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    color: var(--search-placeholder);
+    transition: color 0.3s ease;
+}
+
+.search-button:hover {
+    color: var(--accent-blue);
+}
+
+.search-button svg {
+    width: 18px;
+    height: 18px;
+}
+
+.action-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 50%;
+}
+
+.action-icon:hover {
+    background-color: var(--bg-color);
+}
+
+.action-icon svg {
+    width: 24px;
+    height: 24px;
+    fill: var(--text-color);
+    transition: fill 0.3s ease;
+}
+
+.action-icon:hover svg {
+    fill: var(--accent-blue);
+}
+
+.search-actions {
+    display: flex;
+}

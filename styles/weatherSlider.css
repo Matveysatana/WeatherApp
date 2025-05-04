@@ -1,0 +1,75 @@
+.weather-slider {
+    display: flex;
+    gap: 10px;
+    background-color: var(--accent-blue);
+    border-radius: 16px;
+    padding: 20px;
+}
+
+.current-weather {
+    min-width: 20rem;
+    
+}
+.img-block {
+    text-align: center;
+    margin-bottom: 12px;
+}
+.current-weather-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(64, 154, 199, 0.3);
+}
+.city-description {
+    display: flex;
+    justify-content: space-between;
+}
+
+.type-weather {
+    color: var(--lightest-gray);
+    font-family: "title", sans-serif;
+}
+.temperature {
+    font-size: 40px;
+}
+
+.weather-days {
+    display: flex;
+    flex: 1;
+    color: var(--black);
+    gap: 20px;
+}
+.day-card {
+    background-color: var(--white);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    height: 100%;
+    width: 16rem;
+}
+
+.weather-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.degree {
+    line-height: 120%;
+    font-weight: 500;
+    font-size: 28px;
+}
+
+.weather-description {
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+}
+
+.day {
+    font-weight: 600;
+}
+.desc {
+    color: var(--light-gray);
+}
