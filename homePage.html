@@ -11,64 +11,101 @@
 
 
 <body>
-    <header class="header">
-        <a href="/homePage.html" class="header-img-link">
-            <img src="assets/images/weaterFav.png" alt="" class="header-img">
-        </a>
-
-        <nav class="header-nav">
-            <ul class="header-nav-content">
-                <a href="/homePage.html">
-                    <img src="assets/images/icons_svg/bx-home.svg" alt="">
-                    Главная
+    <div class="app">
+        <header class="header">
+            <div class="logo">
+                <a href="/homePage.html" class="header-img-link">
+                    <img src="assets/images/weaterFav.png" alt="logo" class="header-img">
                 </a>
-            </ul>
-
-            <ul class="header-nav-content">
-                <a href="/blogPage.html">
-                    <img src="assets/images/icons_svg/bx-news.svg" alt="">
-                    Блог
-                </a>
-            </ul>
-
-            <ul class="header-nav-content">
-                <a href="/mapPage.html">
-                    <img src="assets/images/icons_svg/bx-map-alt.svg" alt="">
-                    Карты
-                </a>
-            </ul>
-
-            <ul class="header-nav-content">
-                <a href="/photoPage.html">
-                    <img src="assets/images/icons_svg/bx-photo-album.svg" alt="">
-                    Фотки
-                </a>
-            </ul>
-
-            <ul class="header-nav-content">
-                <a href="/contactPage.html">
-                    <img src="assets/images/icons_svg/bx-phone.svg" alt="">
-                    Контакты
-                </a>
-            </ul>
-        </nav>
-    </header>
-
-    <main class="container">
-
-        <div class="search">
-            <div class="search-now-location">
-                <img src="assets/images/icons_svg/mini-map.svg" alt="" class="search-now-location-img">
-                <span class="search-now-location-town">г.Феодосия</span>
             </div>
-            <input type="text" class="search-inp" placeholder="Поиск города...">
-            <div class="search-extra">
-                <img src="assets/images/icons_svg/bx-calendar.svg" alt="" class="search-extra-img">
-                <img src="assets/images/icons_svg/bxs-bell-ring.svg" alt="" class="search-extra-img">
-            </div>
-        </div>
 
-    </main>
+            <nav class="header-nav">
+                <ul>
+                    <li><a href="/homePage.html" class="header-nav-content-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path
+                                    d="M3 13h1v7c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2v-7h1a1 1 0 0 0 .707-1.707l-9-9a.999.999 0 0 0-1.414 0l-9 9A1 1 0 0 0 3 13zm7 7v-5h4v5h-4z" />
+                            </svg>
+                            Главная
+                        </a></li>
+
+                    <li><a href="/blogPage.html" class="header-nav-content-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path
+                                    d="M19.875 3H4.125C2.953 3 2 3.897 2 5v14c0 1.103.953 2 2.125 2h15.75C21.047 21 22 20.103 22 19V5c0-1.103-.953-2-2.125-2zM6 7h6v6H6zm7 8H6v2h12v-2h-4zm1-4h4v2h-4zm0-4h4v2h-4z" />
+                            </svg>
+                            Блог
+                        </a></li>
+
+                    <li><a href="/mapPage.html" class="header-nav-content-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path
+                                    d="m21.447 6.105-6-3a1 1 0 0 0-.895 0L9 5.882 3.447 3.105A1 1 0 0 0 2 4v13c0 .379.214.725.553.895l6 3a1 1 0 0 0 .895 0L15 18.118l5.553 2.776a.992.992 0 0 0 .972-.043c.295-.183.475-.504.475-.851V7c0-.379-.214-.725-.553-.895z" />
+                            </svg>
+                            Карты
+                        </a></li>
+
+                    <li><a href="/photoPage.html" class="header-nav-content-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M11.024 11.536 10 10l-2 3h9l-3.5-5z" />
+                                <circle cx="9.503" cy="7.497" r="1.503" />
+                                <path
+                                    d="M19 2H6c-1.206 0-3 .799-3 3v14c0 2.201 1.794 3 3 3h15v-2H6.012C5.55 19.988 5 19.806 5 19s.55-.988 1.012-1H21V4c0-1.103-.897-2-2-2z" />
+                            </svg>
+                            Фотки
+                        </a></li>
+
+                    <li><a href="/contactPage.html" class="header-nav-content-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path
+                                    d="M17.707 12.293a.999.999 0 0 0-1.414 0l-1.594 1.594c-.739-.22-2.118-.72-2.992-1.594s-1.374-2.253-1.594-2.992l1.594-1.594a.999.999 0 0 0 0-1.414l-4-4a.999.999 0 0 0-1.414 0L3.581 5.005c-.38.38-.594.902-.586 1.435.023 1.424.4 6.37 4.298 10.268s8.844 4.274 10.269 4.298h.028c.528 0 1.027-.208 1.405-.586l2.712-2.712a.999.999 0 0 0 0-1.414l-4-4.001z" />
+                            </svg>
+                            Контакты
+                        </a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <main class="container">
+            <div class="search-container">
+                <div class="location">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                        <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                    <span class="location-text">Феодосия, Крым</span>
+                </div>
+        
+                <div class="search-bar">
+                    <input type="text" placeholder="Поиск города..." class="search-input">
+                    <button class="search-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                    </button>
+                </div>
+        
+                <div class="search-actions">
+                    <div class="action-icon calendar-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M7 11h2v2H7zm0 4h2v2H7zm4-4h2v2h-2zm0 4h2v2h-2zm4-4h2v2h-2zm0 4h2v2h-2z"/>
+                            <path d="M5 22h14c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2h-2V2h-2v2H9V2H7v2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2zM19 8l.001 12H5V8h14z"/>
+                        </svg>
+                    </div>
+                    <div class="action-icon bell-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path d="m5.705 3.71-1.41-1.42C1 5.563 1 7.935 1 11h1l1-.063C3 8.009 3 6.396 5.705 3.71zm13.999-1.42-1.408 1.42C21 6.396 21 8.009 21 11l2-.063c0-3.002 0-5.374-3.296-8.647zM12 22a2.98 2.98 0 0 0 2.818-2H9.182A2.98 2.98 0 0 0 12 22zm7-7.414V10c0-3.217-2.185-5.927-5.145-6.742C13.562 2.52 12.846 2 12 2s-1.562.52-1.855 1.258C7.184 4.073 5 6.783 5 10v4.586l-1.707 1.707A.996.996 0 0 0 3 17v1a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1v-1a.996.996 0 0 0-.293-.707L19 14.586z"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
 
 
 </body>
