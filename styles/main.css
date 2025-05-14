@@ -11,7 +11,7 @@
     --accent-blue: #409AC7;
     --lightest-gray: #EAEAEC;
     --light-gray: #92949F ;
-
+    --body-bg: #EFF3F9;
     /* Тёмная тема (подключишь через класс в будущем) */
     --dark-bg: #1e1e1e;
     --dark-text: #dcdcdc;
@@ -30,7 +30,7 @@
 }
 
 body {
-    background-color: var(--text-color);
+    background-color: var(--body-bg);
     color: var(--white);
     font-family: 'text1', sans-serif;
 }

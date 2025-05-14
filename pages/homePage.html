@@ -4,13 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="assets/images/weaterFav.png">
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/searchBar.css">
-    <link rel="stylesheet" href="styles/weatherSlider.css">
+    <link rel="icon" type="image/x-icon" href="/assets/images/weaterFav.png">
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/header.css">
+    <link rel="stylesheet" href="/styles/searchBar.css">
+    <link rel="stylesheet" href="/styles/weatherSlider.css">
 
-    <script src="scripts/slider.js" defer></script>
+    <script src="/scripts/weather.js" defer></script>
+
     <title>Woydock_Weather</title>
 </head>
 
@@ -20,13 +21,13 @@
         <header class="header">
             <div class="logo">
                 <a href="/homePage.html" class="header-img-link">
-                    <img src="assets/images/weaterFav.png" alt="logo" class="header-img">
+                    <img src="/assets/images/weaterFav.png" alt="logo" class="header-img">
                 </a>
             </div>
 
             <nav class="header-nav">
                 <ul>
-                    <li><a href="/homePage.html" class="header-nav-content-link">
+                    <li><a href="/pages/homePage.html" class="header-nav-content-link">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                 <path
                                     d="M3 13h1v7c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2v-7h1a1 1 0 0 0 .707-1.707l-9-9a.999.999 0 0 0-1.414 0l-9 9A1 1 0 0 0 3 13zm7 7v-5h4v5h-4z" />
@@ -34,7 +35,7 @@
                             Главная
                         </a></li>
 
-                    <li><a href="/blogPage.html" class="header-nav-content-link">
+                    <li><a href="/pages/blogPage.html" class="header-nav-content-link">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                 <path
                                     d="M19.875 3H4.125C2.953 3 2 3.897 2 5v14c0 1.103.953 2 2.125 2h15.75C21.047 21 22 20.103 22 19V5c0-1.103-.953-2-2.125-2zM6 7h6v6H6zm7 8H6v2h12v-2h-4zm1-4h4v2h-4zm0-4h4v2h-4z" />
@@ -42,7 +43,7 @@
                             Блог
                         </a></li>
 
-                    <li><a href="/mapPage.html" class="header-nav-content-link">
+                    <li><a href="/pages/mapPage.html" class="header-nav-content-link">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                 <path
                                     d="m21.447 6.105-6-3a1 1 0 0 0-.895 0L9 5.882 3.447 3.105A1 1 0 0 0 2 4v13c0 .379.214.725.553.895l6 3a1 1 0 0 0 .895 0L15 18.118l5.553 2.776a.992.992 0 0 0 .972-.043c.295-.183.475-.504.475-.851V7c0-.379-.214-.725-.553-.895z" />
@@ -50,7 +51,7 @@
                             Карты
                         </a></li>
 
-                    <li><a href="/photoPage.html" class="header-nav-content-link">
+                    <li><a href="/pages/photoPage.html" class="header-nav-content-link">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                 <path d="M11.024 11.536 10 10l-2 3h9l-3.5-5z" />
                                 <circle cx="9.503" cy="7.497" r="1.503" />
@@ -60,7 +61,7 @@
                             Фотки
                         </a></li>
 
-                    <li><a href="/contactPage.html" class="header-nav-content-link">
+                    <li><a href="/pages/contact.html" class="header-nav-content-link">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                 <path
                                     d="M17.707 12.293a.999.999 0 0 0-1.414 0l-1.594 1.594c-.739-.22-2.118-.72-2.992-1.594s-1.374-2.253-1.594-2.992l1.594-1.594a.999.999 0 0 0 0-1.414l-4-4a.999.999 0 0 0-1.414 0L3.581 5.005c-.38.38-.594.902-.586 1.435.023 1.424.4 6.37 4.298 10.268s8.844 4.274 10.269 4.298h.028c.528 0 1.027-.208 1.405-.586l2.712-2.712a.999.999 0 0 0 0-1.414l-4-4.001z" />
@@ -128,61 +129,6 @@
                 <div class="weather-days">
 
                     <div class="day-card">
-                        <div class="weather-info">
-                            <img src="sun-cloud-icon.svg" alt="Weather Icon" class="weather-img-card" />
-                            <p class="degree">14°</p>
-                        </div>
-                        <div class="weather-description">
-                            <p class="day">Понедельник</p>
-                            <p class="desc">Солнечно</p>
-                        </div>
-                    </div>
-                    <div class="day-card">
-                        <div class="weather-info">
-                            <img src="sun-cloud-icon.svg" alt="Weather Icon" class="weather-img-card" />
-                            <p class="degree">14°</p>
-                        </div>
-                        <div class="weather-description">
-                            <p class="day">Понедельник</p>
-                            <p class="desc">Солнечно</p>
-                        </div>
-                    </div><div class="day-card">
-                        <div class="weather-info">
-                            <img src="sun-cloud-icon.svg" alt="Weather Icon" class="weather-img-card" />
-                            <p class="degree">14°</p>
-                        </div>
-                        <div class="weather-description">
-                            <p class="day">Понедельник</p>
-                            <p class="desc">Солнечно</p>
-                        </div>
-                    </div><div class="day-card">
-                        <div class="weather-info">
-                            <img src="sun-cloud-icon.svg" alt="Weather Icon" class="weather-img-card" />
-                            <p class="degree">14°</p>
-                        </div>
-                        <div class="weather-description">
-                            <p class="day">Понедельник</p>
-                            <p class="desc">Солнечно</p>
-                        </div>
-                    </div><div class="day-card">
-                        <div class="weather-info">
-                            <img src="sun-cloud-icon.svg" alt="Weather Icon" class="weather-img-card" />
-                            <p class="degree">14°</p>
-                        </div>
-                        <div class="weather-description">
-                            <p class="day">Понедельник</p>
-                            <p class="desc">Солнечно</p>
-                        </div>
-                    </div><div class="day-card">
-                        <div class="weather-info">
-                            <img src="sun-cloud-icon.svg" alt="Weather Icon" class="weather-img-card" />
-                            <p class="degree">14°</p>
-                        </div>
-                        <div class="weather-description">
-                            <p class="day">Понедельник</p>
-                            <p class="desc">Солнечно</p>
-                        </div>
-                    </div><div class="day-card">
                         <div class="weather-info">
                             <img src="sun-cloud-icon.svg" alt="Weather Icon" class="weather-img-card" />
                             <p class="degree">14°</p>

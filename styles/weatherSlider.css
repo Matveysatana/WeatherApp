@@ -1,64 +1,57 @@
 .weather-slider {
     display: flex;
-    gap: 10px;
+    gap: 2rem;
     background-color: var(--accent-blue);
-    border-radius: 16px;
-    padding: 20px;
-}
-
-.current-weather {
-    min-width: 20rem;
-    
-}
-.img-block {
-    text-align: center;
-    margin-bottom: 12px;
+    border-radius: 1rem;
+    padding: 1rem;
+    justify-content: center;
 }
 .current-weather-img {
-    width: 60px;
-    height: 60px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(64, 154, 199, 0.3);
+    width: 6rem;
 }
+
 .city-description {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
 }
 
 .type-weather {
     color: var(--lightest-gray);
-    font-family: "title", sans-serif;
 }
 .temperature {
-    font-size: 40px;
+    font-size: 3rem;
 }
 
 .weather-days {
     display: flex;
-    flex: 1;
     color: var(--black);
-    gap: 20px;
+    gap: 1rem;
+    padding: 10px 0;
 }
 .day-card {
     background-color: var(--white);
-    border-radius: 12px;
+    border-radius: .75rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 10px;
-    height: 100%;
+    padding: 0.65rem;
     width: 16rem;
 }
 
 .weather-info {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
+.weather-img-card {
+    width: 3rem;
+
+}
 .degree {
-    line-height: 120%;
-    font-weight: 500;
-    font-size: 28px;
+    font-size: 2rem;
 }
 
 .weather-description {
@@ -72,4 +65,15 @@
 }
 .desc {
     color: var(--light-gray);
+}
+
+
+.loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: var(--white);
+    font-size: 1.2rem;
+    height: 100px;
 }
