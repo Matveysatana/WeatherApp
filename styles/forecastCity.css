@@ -1,0 +1,63 @@
+.cities-forecast {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: var(--white);
+    border-radius: 1rem;
+}
+
+.cities-forecast-title {
+    color: var(--text-color);
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+
+.cities-forecast-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1 1 calc(50% - 1rem);
+    max-width: calc(50% - 1rem);
+    box-sizing: border-box; 
+    border-radius: 1rem;
+    padding: 1rem;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
+
+.forecast-desc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    color: var(--light-gray);
+}
+
+.see-more {
+    position: relative;
+    z-index: 1;
+    font-size: clamp(14px, 0.83vw, 20px);
+    font-weight: 500;
+    line-height: 150%;
+    padding: clamp(12px, 0.83vw, 20px) clamp(24px, 1.66vw, 40px);
+    border-radius: 5px;
+    max-width: calc(100% - 1rem);
+    display: flex;
+    flex: 1;
+    border: 0;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease-in;
+    background-color: var( --accent-blue);
+    color: var(--white);
+    margin-top: 0.5rem;
+}
+
+.see-more:hover {
+    background-color: var(--text-color);
+    color: var(--white);
+}
