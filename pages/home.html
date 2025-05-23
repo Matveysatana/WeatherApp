@@ -12,9 +12,12 @@
     <link rel="stylesheet" href="/styles/highlights.css">
     <link rel="stylesheet" href="/styles/forecastCity.css">
 
-    <script src="/scripts/weather.js" defer></script>
-    <script src="/scripts/main.js" defer></script>
 
+    <script type="module" defer src="/scripts/config.js"></script>
+    <script type="module" defer src="/scripts/utils.js"></script>
+    <script type="module" defer src="/scripts/highlights.js"></script>
+    <script type="module" defer src="/scripts/citiesForecast.js"></script>
+    <script type="module" defer src="/scripts/weather.js"></script>
 
 
     <title>Woydock_Weather</title>
@@ -32,7 +35,7 @@
 
             <nav class="header-nav">
                 <ul>
-                    <li><a href="/pages/homePage.html" class="header-nav-content-link">
+                    <li><a href="/pages/home.html" class="header-nav-content-link">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                 <path
                                     d="M3 13h1v7c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2v-7h1a1 1 0 0 0 .707-1.707l-9-9a.999.999 0 0 0-1.414 0l-9 9A1 1 0 0 0 3 13zm7 7v-5h4v5h-4z" />
@@ -40,7 +43,7 @@
                             Главная
                         </a></li>
 
-                    <li><a href="/pages/blogPage.html" class="header-nav-content-link">
+                    <li><a href="/pages/blog.html" class="header-nav-content-link">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                 <path
                                     d="M19.875 3H4.125C2.953 3 2 3.897 2 5v14c0 1.103.953 2 2.125 2h15.75C21.047 21 22 20.103 22 19V5c0-1.103-.953-2-2.125-2zM6 7h6v6H6zm7 8H6v2h12v-2h-4zm1-4h4v2h-4zm0-4h4v2h-4z" />
@@ -48,7 +51,7 @@
                             Блог
                         </a></li>
 
-                    <li><a href="/pages/mapPage.html" class="header-nav-content-link">
+                    <li><a href="/pages/map.html" class="header-nav-content-link">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                 <path
                                     d="m21.447 6.105-6-3a1 1 0 0 0-.895 0L9 5.882 3.447 3.105A1 1 0 0 0 2 4v13c0 .379.214.725.553.895l6 3a1 1 0 0 0 .895 0L15 18.118l5.553 2.776a.992.992 0 0 0 .972-.043c.295-.183.475-.504.475-.851V7c0-.379-.214-.725-.553-.895z" />
@@ -56,7 +59,7 @@
                             Карты
                         </a></li>
 
-                    <li><a href="/pages/photoPage.html" class="header-nav-content-link">
+                    <li><a href="/pages/photo.html" class="header-nav-content-link">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                 <path d="M11.024 11.536 10 10l-2 3h9l-3.5-5z" />
                                 <circle cx="9.503" cy="7.497" r="1.503" />
@@ -152,79 +155,6 @@
                 </h2>
                 <div class="cards-list">
 
-                    <div class="today-highlights-card">
-                        <div class="card-block">
-                            <img src="/assets/images/weaterFav.png" width="48px" alt="">
-                            <div>
-                                <h3 class="title-card">Ощущается как</h3>
-                                <h4 class="desc-card">Нормально</h4>
-                            </div>
-                        </div>
-                        <div class="card-num">
-                            <p class="num"> 18° </p>
-                        </div>
-                    </div>
-                    <div class="today-highlights-card">
-                        <div class="card-block">
-                            <img src="/assets/images/weaterFav.png" width="48px" alt="">
-                            <div>
-                                <h3 class="title-card">Ощущается как</h3>
-                                <h4 class="desc-card">Нормально</h4>
-                            </div>
-                        </div>
-                        <div class="card-num">
-                            <p class="num"> 18° </p>
-                        </div>
-                    </div>
-                    <div class="today-highlights-card">
-                        <div class="card-block">
-                            <img src="/assets/images/weaterFav.png" width="48px" alt="">
-                            <div>
-                                <h3 class="title-card">Ощущается как</h3>
-                                <h4 class="desc-card">Нормально</h4>
-                            </div>
-                        </div>
-                        <div class="card-num">
-                            <p class="num"> 18° </p>
-                        </div>
-                    </div>
-                    <div class="today-highlights-card">
-                        <div class="card-block">
-                            <img src="/assets/images/weaterFav.png" width="48px" alt="">
-                            <div>
-                                <h3 class="title-card">Ощущается как</h3>
-                                <h4 class="desc-card">Нормально</h4>
-                            </div>
-                        </div>
-                        <div class="card-num">
-                            <p class="num"> 18° </p>
-                        </div>
-                    </div>
-                    <div class="today-highlights-card">
-                        <div class="card-block">
-                            <img src="/assets/images/weaterFav.png" width="48px" alt="">
-                            <div>
-                                <h3 class="title-card">Ощущается как</h3>
-                                <h4 class="desc-card">Нормально</h4>
-                            </div>
-                        </div>
-                        <div class="card-num">
-                            <p class="num"> 18° </p>
-                        </div>
-                    </div>
-                    <div class="today-highlights-card">
-                        <div class="card-block">
-                            <img src="/assets/images/weaterFav.png" width="48px" alt="">
-                            <div>
-                                <h3 class="title-card">Ощущается как</h3>
-                                <h4 class="desc-card">Нормально</h4>
-                            </div>
-                        </div>
-                        <div class="card-num">
-                            <p class="num"> 18° </p>
-                        </div>
-                    </div>
-
                 </div>
             </section>
 
@@ -232,86 +162,13 @@
                 <h5 class="cities-forecast-title">Остальные города</h5>
                 <div class="cards-list">
 
-                    <div class="cities-forecast-card">
-                        <div class="card-block">
-                            <img src="/assets/images/weaterFav.png" width="48px" alt="">
-                            <div>
-                                <h3 class="title-card">Феодосия</h3>
-                                <p class="forecast-desc">
-                                    <span class="weather-city">Солнечно</span>
-                                    <span class="higt-city">15°</span>
-                                    <span class="low-city">18°</span>
-                                </p>
-                            </div>
-
-
-                        </div>
-                        <div class="card-num">
-                            <p class="num"> 18° </p>
-                        </div>
-                    </div>
-
-                    <div class="cities-forecast-card">
-                        <div class="card-block">
-                            <img src="/assets/images/weaterFav.png" width="48px" alt="">
-                            <div>
-                                <h3 class="title-card">Феодосия</h3>
-                                <p class="forecast-desc">
-                                    <span class="weather-city">Солнечно</span>
-                                    <span class="higt-city">15°</span>
-                                    <span class="low-city">18°</span>
-                                </p>
-                            </div>
-
-
-                        </div>
-                        <div class="card-num">
-                            <p class="num"> 18° </p>
-                        </div>
-                    </div>
-                    <div class="cities-forecast-card">
-                        <div class="card-block">
-                            <img src="/assets/images/weaterFav.png" width="48px" alt="">
-                            <div>
-                                <h3 class="title-card">Феодосия</h3>
-                                <p class="forecast-desc">
-                                    <span class="weather-city">Солнечно</span>
-                                    <span class="higt-city">15°</span>
-                                    <span class="low-city">18°</span>
-                                </p>
-                            </div>
-
-
-                        </div>
-                        <div class="card-num">
-                            <p class="num"> 18° </p>
-                        </div>
-                    </div>
-                    <div class="cities-forecast-card">
-                        <div class="card-block">
-                            <img src="/assets/images/weaterFav.png" width="48px" alt="">
-                            <div>
-                                <h3 class="title-card">Феодосия</h3>
-                                <p class="forecast-desc">
-                                    <span class="weather-city">Солнечно</span>
-                                    <span class="higt-city">15°</span>
-                                    <span class="low-city">18°</span>
-                                </p>
-                            </div>
-
-
-                        </div>
-                        <div class="card-num">
-                            <p class="num"> 18° </p>
-                        </div>
-                    </div>
-
-                    <a href="/" class="see-more">Посмотреть больше</a>
                 </div>
             </section>
+
+        </main>
     </div>
-    </main>
-    </div>
+
+
 
 
 

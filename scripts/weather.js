@@ -1,8 +1,10 @@
-document.addEventListener('DOMContentLoaded', function () {
-    // Конфигурация API
-    const WEATHERAPI_KEY = '30bcca91f45b4379bd9154848251103'; // Ваш ключ
-    const BASE_URL = 'https://api.weatherapi.com/v1';
+// weather.js
+import { WEATHERAPI_KEY, BASE_URL } from './config.js';
+import { capitalizeFirstLetter } from './utils.js';
+import { updateHighlights } from './highlights.js';
+import { updateCitiesForecast } from './citiesForecast.js';
 
+document.addEventListener('DOMContentLoaded', function () {
     // Элементы DOM
     const elements = {
         searchInput: document.querySelector('.search-input'),
@@ -21,7 +23,8 @@ document.addEventListener('DOMContentLoaded', function () {
         currentSlide: 0,
         slideInterval: null,
         forecastData: [],
-        daysOfWeek: ['Воскресенье', 'Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота']
+        daysOfWeek: ['Воскресенье', 'Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота'],
+        currentCity: 'Москва'
     };
 
     // Инициализация
@@ -29,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function init() {
         setupEventListeners();
-        fetchWeather('Москва');
+        fetchWeather(state.currentCity);
     }
 
     function setupEventListeners() {
@@ -42,6 +45,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function handleSearch() {
         const city = elements.searchInput.value.trim();
         if (city) {
+            state.currentCity = city;
             fetchWeather(city);
         }
     }
@@ -63,13 +67,17 @@ document.addEventListener('DOMContentLoaded', function () {
             updateWeatherUI(data);
             elements.searchInput.value = capitalizeFirstLetter(city);
 
+            // Обновляем highlights и cities forecast
+            updateHighlights(data);
+            updateCitiesForecast(city);
+
             // Перезапускаем слайдер с новыми данными
             startSlider();
 
         } catch (error) {
             console.error('Ошибка:', error);
             if (!state.forecastData.length) {
-                alert(`Ошибка: ${error.mesage}. Загружаем данные для Москвы.`);
+                alert(`Ошибка: ${error.message}. Загружаем данные для Москвы.`);
                 fetchWeather('Москва');
             } else {
                 alert(`Ошибка: ${error.message}. Показаны предыдущие данные.`);
@@ -153,8 +161,6 @@ document.addEventListener('DOMContentLoaded', function () {
         }, 5000);
     }
 
-
-
     function updateSliderPosition() {
         const cards = document.querySelectorAll('.day-card');
         if (!cards.length) return;
@@ -178,12 +184,4 @@ document.addEventListener('DOMContentLoaded', function () {
             startSlider();
         }, 300);
     }
-
-    function capitalizeFirstLetter(string) {
-        if (!string) return '';
-        return string.split(' ').map(word =>
-            word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()
-        ).join(' ');
-    }
 });
-
