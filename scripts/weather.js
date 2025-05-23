@@ -187,4 +187,3 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
-const apple = 1;
